@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-heading h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #e74c3c;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-image img {
+             width: 200px; 
+             height: auto; 
+             border-radius: 10px;
+            }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #e67e22;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: #27ae60;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+
+        .project-item h3 {
+            color: #fff;
+        }
+
+        .project-date,
+        .project-details {
+            color: #ecf0f1;
+        }
+
+        .project-description {
+            margin-top: 10px;
+            color: #ecf0f1;
+        }
+
+        .resume-content,
+        .contact-content {
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+    <title>Tejas S - Portfolio</title>
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="container">
+            <h1>Tejas S</h1>
+            <p class="subtitle">Web/software Developer</p>
+        </div>
+    </header>
+
+    
+    <div class="container main-content">
+
+        
+        <section id="about" class="section">
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate and dedicated BCA student in my third year at Amrita Vishwa Vidyapeeth. With a keen interest in problem-solving, I specialize in writing efficient code to tackle complex challenges. My journey in computer science has equipped me with a strong foundation in programming languages and a drive to optimize solutions. Eager to contribute to the tech industry's innovations and continuously enhance my coding skills.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="C:\Users\Asus\Desktop\my.jpg" alt="Tejas S">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <h2>Skills</h2>
+            </div>
+            <ul class="skills-list">
+                <li>c/c++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Python</li>
+                
+            </ul>
+        </section>
+
+       
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-grid">
+               
+                <div class="project-item">
+                    <h3>Integrated Bookstore Management System</h3>
+                    <p class="project-date">August 2023 - November 2023</p>
+                    <p class="project-details">Languages and Technologies used: PHP, HTML, CSS, SQL</p>
+                    <p class="project-description">
+                        The 'Integrated Bookstore Management System' is a PHP-based web application featuring a responsive HTML/CSS UI. The project encompasses both frontend and backend development, incorporating secure authentication, role-based access control, advanced book searches, and seamless payment processing. A SQL-managed relational database ensures efficient data processing. The system integrates real-time collaboration tools for efficient staff management, showcasing proficiency in core web technologies and optimization of bookstore operations through seamless integration.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Web-Based Sports Store Management System</h3>
+                    <p class="project-date">February 2023 - March 2023</p>
+                    <p class="project-details">Languages and Technologies used: PHP, HTML, CSS, SQL</p>
+                    <p class="project-description">
+                        In the 'Web-Based Sports Store Management System,' I developed a basic yet effective solution using HTML, CSS, PHP, and SQL. It features separate login panels for administrators and users, ensuring an intuitive interface for streamlined sports store maintenance. The project underscores foundational web development skills, offering practical systems for inventory management, sales monitoring, and user interactions.
+                    </p>
+                </div>
+               
+                <div class="project-item">
+                    <h3>Weather Prediction App with Java and SQL</h3>
+                    <p class="project-date">March 2022 - June 2022</p>
+                    <p class="project-details">Languages and Technologies used: Java, SQL</p>
+                    <p class="project-description">
+                In the 'Simple Weather Prediction App,' crafted with Java and SQL, I devised a user-friendly solution for basic weather forecasting using historical data. Leveraging Java for backend operations and SQL for efficient data management, users can input parameters and receive straightforward predictions. The SQL database enhances the system's simplicity, highlighting my foundational skills in Java and SQL. This project reflects my introductory approach to weather prediction in a user-friendly application.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="resume" class="section">
+            <div class="section-heading">
+                <h2>Resume</h2>
+            </div>
+            <div class="resume-content">
+                <p>Download my <a href="F:\cvtejas.pdf" target="_blank" rel="noopener noreferrer">resume</a>.</p>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-content">
+                <p>Email: <a href="mailto:st3890284@gmail.com">st3890284@gmail.com</a></p>
+                <p>Phone: 8660869100</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/tejas-s" target="_blank" rel="noopener noreferrer">Tejas S</a></p>
+            </div>
+        </section>
+
+    </div> 
+
+  
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; linkedin:Tejas S</p>
+           
+        </div>
+    </footer>
+
+</body>
+</html>
